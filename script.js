@@ -6,7 +6,6 @@ const gastosPersonaEl = document.querySelector("#gastos-persona");
 const formEl = document.querySelector("form");
 const personaAgregadaEl = document.querySelector(".persona-agregada");
 const gastosTotalesEl = document.querySelector("#section--gastos-totales");
-const nombrePersonaArr = new Array();
 const gastosTotalesNum = document.querySelector("#gastos-totales");
 const gastosCadaUno = document.querySelector("#cada-uno-pago");
 
@@ -24,7 +23,6 @@ submitBtnEl.addEventListener("click", e => {
 
 	if (!nombrePersonaEl.value === "" || !gastosPersonaEl.value == "") {
 		// Agregando persona y cantidad de gastos
-		nombrePersonaArr.push(nombrePersonaEl.value);
 		gastoPersonaCounter += Number(gastosPersonaEl.value);
 		cantidadPersonasCounter += 1;
 
